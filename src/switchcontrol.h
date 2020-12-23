@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "tweakpage.h"
 #include "faqpage.h"
+#include "loginpage.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class SwitchControl; }
@@ -17,11 +18,13 @@ public:
   SwitchControl(QWidget *parent = nullptr);
   ~SwitchControl();
 
+public slots:
+  void onLoginSuccsess();
+
 private:
-  void tryLogin();
-  bool isLoginPasswordCorrect();
   Ui::SwitchControl *_ui;
   TweakPage *_tweakPage;
   FaqPage *_faqPage;
+  LoginPage *_loginPage;
 };
 #endif // SWITCHCONTROL_H

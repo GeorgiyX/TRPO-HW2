@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     src/faqpage.cpp \
+    src/loginpage.cpp \
     src/main.cpp \
     src/switchcontrol.cpp \
     src/switchdatamapper.cpp \
@@ -18,11 +19,13 @@ SOURCES += \
 HEADERS += \
     src/businesslogic.h \
     src/faqpage.h \
+    src/loginpage.h \
     src/switchcontrol.h \
     src/switchdatamapper.h \
     src/tweakpage.h
 
 FORMS += \
+    ui/loginpage.ui \
     ui/faqpage.ui \
     ui/switchcontrol.ui \
     ui/tweakpage.ui

@@ -22,8 +22,6 @@ private:
   SwitchDataMapper();
   ~SwitchDataMapper();
   QSqlDatabase _databaseConnection;
-
-
 };
 
 #endif // SWITCHDATAMAPPER_H
